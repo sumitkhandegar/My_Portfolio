@@ -62,28 +62,34 @@ hr {
     padding-top: 30px;
 }
 
+
 @media screen and (max-width: 640px) {
     hr {
-        width: 80%;
-    }
-
-    .bg .content {
-        transform: translate(-50%, -240%);
-    }
-
-    .bg_img {
-        width: 100%;
-        height: 135%;
+        width: 60%;
     }
 
     .bg .content h1 {
-        color: white;
-        padding: 10px 25px;
         font-size: 30px;
     }
     
     .bg .content p {
         font-size: 20px;
-        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .buttons {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg .content {
+        transform: translate(-50%, -145%);
+    }
+
+    .bg_img {
+        width: 100%;
+        height: 160%;
     }
 }
