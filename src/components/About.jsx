@@ -14,7 +14,7 @@ const About = () => {
           <h2 className="text-2xl font-semibold text-indigo-400 mb-4">
             Web Developer & Competitive Programmer
           </h2>
-          <h4 className="text-lg mb-6">
+          <h4 className="text-md md:text-lg mb-6">
             I am a passionate web developer with experience in designing and
             building responsive, dynamic websites. I specialize in frontend
             design, backend development using Node.js, and creating seamless
@@ -25,12 +25,12 @@ const About = () => {
 
           <div className="flex flex-shrink justify-center lg:justify-start">
             <NavLink to="https://github.com/sumitkhandegar">
-              <button className="bg-indigo-500 text-white px-4 py-3 rounded-md hover:bg-indigo-600 transition mr-2">
+              <button className="bg-indigo-500 text-white text-sm md:text-lg px-4 py-3 rounded-md hover:bg-indigo-600 transition mr-2">
                 GitHub Profile
               </button>
             </NavLink>
             <NavLink to="https://drive.google.com/file/d/1zkaAMGimJFn1O9McyvGtTr5wwhQMM1Kg/view?usp=sharing">
-              <button className="bg-indigo-500 text-white px-4 py-3 rounded-md hover:bg-indigo-600 transition">
+              <button className="bg-indigo-500 text-white text-sm md:text-lg px-4 py-3 rounded-md hover:bg-indigo-600 transition">
                 Download Resume
               </button>
             </NavLink>

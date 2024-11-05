@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -21,7 +28,7 @@ const Navbar = () => {
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <span className="text-white ml-2 md:text-2xl text:lg font-bold">
+            <span className="text-white ml-2 md:text-2xl text-lg font-bold">
               SUMIT KHANDEGAR
             </span>
           </div>
@@ -67,6 +74,11 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {/* Wide Scroll Progress Bar */}
+      <motion.div
+        className="fixed top-18 left-0 h-2 w-full bg-indigo-600 origin-left z-50"
+        style={{ scaleX }}
+      />
       {/* Mobile menu */}
       <div
         className={`${isOpen ? "block" : "hidden"} sm:hidden`}

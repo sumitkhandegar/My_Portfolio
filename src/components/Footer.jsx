@@ -14,7 +14,7 @@ function Footer() {
 
   return (
     <div className="w-full py-8 justify-center bg-gray-800">
-      <footer className="w-full max-w-6xl flex flex-wrap justify-center lg:pl-24 xl:pl-46 gap-6 md:gap-12 px-4 text-gray-800 dark:text-white">
+      <footer className="w-full max-w-full flex flex-wrap justify-center gap-6 md:gap-16 lg:gap-28 xl:gap-64 px-4 text-gray-800">
         <div className="flex flex-col">
           <h2 className="font-semibold text-xl text-blue-500 dark:text-blue-300 mb-2">
             Coding Profiles
@@ -87,7 +87,7 @@ function Footer() {
           </nav>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col max-w-64">
           <h1 className="font-semibold text-xl text-blue-500 dark:text-blue-300 mb-2">
             Get in Touch
           </h1>
